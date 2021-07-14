@@ -1,0 +1,315 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration:none;
+    list-style:none;
+    box-sizing:content-box;
+    
+  }
+  html,body{
+    width:100vw;
+    max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    top:0;
+    left:0;
+    overflow-x:hidden;
+    position:absolute;
+    height:100vh;
+    scroll-behavior:smooth;
+  }
+  
+
+  /*navbar*/
+  nav{
+    height:80px;
+    width:100vw;
+    margin:0 auto;
+  }
+
+  .logoImg{
+      padding:5px;
+      width:88px;  
+  }
+  .logoTitle{
+      margin:7px;
+      vertical-align: middle;
+      padding:3px;
+      display:inline;
+      color:#F36717;
+      text-shadow:.9px .9px 9px #F36717;
+  }
+  nav ul{
+    float:right;
+    margin-right:20px;
+  }
+  nav ul li{
+    display:inline-block;
+    line-height:80px;
+    margin:0 5px;
+  }
+  nav ul li a {
+    color:white;
+    font-size:17px;
+    text-transform:uppercase;
+    padding:7px 13px;
+    border-radius:3px;
+    text-decoration:none!important;
+
+  }
+  nav ul li a:hover {
+    color:white;
+    text-shadow:.9px .9px 9px #F36717;
+    
+  }
+  li.active{
+    background:#F36717;
+    transition:.5s;
+    
+  }
+  .checkbtn{
+    font-size:30px;
+    color:white;
+    float:right;
+    line-height:80px;
+    margin-right:40px;
+    cursor:pointer;
+    display:none;
+  }
+  .checkbtn:hover{
+      color:#F36717;
+      transform:scaleY(1.1);
+      transition:0.6s;
+  }
+  #check{
+    display:none;
+  }
+  @media(max-width:952px)
+  {
+    label.logo{
+      font-size:30px;
+      padding:10px;
+      margin-bottom:12px;
+        margin-top:-9px;
+    }
+    .logo img{
+        min-width:33%;
+        
+    }
+    nav ul li a{
+      font-size:15px;
+      
+    }
+  }
+  
+  @media(max-width:858px){
+    .checkbtn{
+      display:block;
+    }
+    ul{
+      position:fixed;
+      width:39%;
+      height:100vh;
+      background:#F36717;
+      top:80px;
+      left:-100%;
+      text-align:center;
+      transition:all .5s;
+      font-weight: bolder;
+      z-index:9000;
+    }
+    nav ul li {
+      display:block;
+      margin:50px 0;
+      line-height:30px;
+    }
+    nav ul li a{
+      font-size:20px;
+      
+    }
+    nav ul li a:hover{
+        color:rgb(23,11,324,0.5);
+        text-shadow:.9px .9px 9px rgb(23,11,324,0.5);
+    }
+    a:hover,li.active{
+      background:none;
+      color:rgb(23,11,324,0.5);
+      text-shadow:.9px .9px 9px rgb(23,11,324,0.5);
+     
+    }
+    #check:checked ~ ul{
+      left:0;  
+      top:0;
+    }  
+    
+    
+  }
+  /* Fim Navbar*/
+  
+
+
+  /*Whatsapp button*/
+.whatsapp-link{
+    position:fixed;
+    width: 60px;
+    height:60px;
+    bottom:34%;
+    right:23px;
+    opacity:0.8;
+    background: #25d366;
+    color:#ffffff;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow:.9px .9px 9px #25d366;
+    z-index:9000;
+}
+
+.fa-whatsapp{
+    margin-top: 16px;
+}
+.whatsapp-link:hover{
+   color:white!important;
+   background:#25d366;
+    transform:scale(1.2);
+}
+/*Fim Whatsaap Button */
+
+
+
+/* Back To Top Button*/
+.gotopbtn{
+  position:fixed;
+  width:50px;
+  height:50px;
+  background-image:linear-gradient(to right bottom,
+#F36717,
+rgb(23,11,324,0.7));
+  bottom:20px;
+  right:27px;
+  border-radius:50%;
+  text-decoration:none;
+  text-align:center;
+  line-height:50px;
+  color:white;
+  box-shadow:.2px .2px 2px #F36717;
+}
+.gotopbtn:hover{
+  color:white!important;
+  background-image:linear-gradient(to right bottom,
+  #F36717,
+  rgb(23,11,324,0.7));
+  
+  transform: scale(1.2);
+}
+/*Fim Back To Top Button*/
+
+
+
+/*Main Home*/
+main{
+    position:relative;
+    margin-top:-23px;
+    width:100%;
+    height:100vh;
+    z-index:-2;
+    background-image:linear-gradient(to right bottom,
+#F36717,
+rgb(23,11,324,0.7)),
+url(https://picsum.photos/id/0/5616/3744);
+background-size: cover;
+background-position: center;
+bottom:0;
+border-bottom: 3px solid #F36717;
+border-bottom-style:ridge;
+
+}
+
+
+
+.presentantion{
+    position:relative;
+    top:90px;
+    bottom:70px;
+    text-shadow: .5px .5px 5px #343A40;
+    display:flex;
+    align-items: center;
+    justify-items: center;
+    padding:7px;
+    margin:0 auto;
+    width:100vw;
+    
+    }
+ /*Fim da Main Home*/
+
+
+
+ /*Section Portifólio*/
+ #Portifolio{
+   width:100%;
+   max-width: 100%;
+   min-height:120vh;
+
+ }
+.container{
+  width:80vw;
+ 
+}
+
+#Portifolio a{
+  text-decoration: none!important;
+  color:#ffffff;
+  cursor:pointer;
+}
+
+.cards{
+
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  flex-wrap:wrap;
+  margin:22px;
+}
+.card{
+  width:47%;
+  margin-bottom: 25px;
+  max-height: 86vh;
+  background-image:linear-gradient(to right bottom,
+#F36717,
+rgb(23,11,324,0.7));
+overflow:hidden;
+box-shadow:.9px .9px 9px #343A40;
+
+}
+.card:hover{
+  box-shadow:3px 3px 3px 6px rgba(0,0,0,0.2);
+}
+.card h2{
+  text-align:center;
+  font-size:22px;
+  margin-top:22px;
+  margin-bottom:10px;
+  font-weight:500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (min-width:940px)
+{
+  .card{
+      width:30%;
+  }
+}
+@media screen and (max-width:640px)
+{
+  #Portifolio h1{
+      font-size:27px;
+  }
+  .card{
+      width:100%;
+  }
+}
+/*Fim da Section Portifolio*/
+
+
+
+
